@@ -42,8 +42,8 @@ sqlite3 /path/to/db.sqlite3 "SELECT * FROM leads WHERE created_at > datetime('no
 
 **C. API响应数据**
 ```bash
-# 示例：从API拉取使用统计
-curl -H "Authorization: Bearer $TOKEN" https://api.example.com/stats > ~/api_stats.json
+# 示例：从API拉取使用统计（token存环境变量）
+curl -H "Authorization: Bearer $API_TOKEN" https://api.example.com/stats > ~/api_stats.json
 ```
 
 ### 2. 跑诊断
